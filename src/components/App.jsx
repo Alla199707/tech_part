@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './Layout/Layuot';
 import { lazy } from 'react';
+import { Container } from 'pages/HomePage/HomePages.styled';
 // import { TweetPage } from 'pages/TweetsPage/TweetsPage';
 // import { HomePage } from 'pages/HomePage/HomePage';
 
@@ -9,7 +10,7 @@ const HomePage = lazy(() => import('pages/HomePage/HomePage'));
 
 export const App = () => {
   return (
-    <div>
+    <Container>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -24,6 +25,6 @@ export const App = () => {
           <Route path="*" element={<HomePage />} />
         </Route>
       </Routes> */}
-    </div>
+    </Container>
   );
 };

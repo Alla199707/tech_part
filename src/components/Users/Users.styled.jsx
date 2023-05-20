@@ -4,8 +4,8 @@ export const List = styled.ul`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 20px;
+  column-gap: 10px;
+  row-gap: 10px;
 `;
 
 export const LoadMoreButton = styled.button`

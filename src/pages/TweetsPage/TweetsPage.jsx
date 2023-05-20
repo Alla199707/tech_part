@@ -1,4 +1,5 @@
 import { getUser } from 'ApiUsers/ApiUsers';
+import { GoBack } from 'components/GoBack/GoBack';
 import { Users } from 'components/Users/Users';
 import { useEffect, useState } from 'react';
 
@@ -28,7 +29,12 @@ function TweetPage() {
       })
       .catch(error => console.log(error));
   });
-  return <Users users={usersStorage ?? users} setUsers={setUsers} />;
+  return (
+    <main>
+      <GoBack />
+      <Users users={usersStorage ?? users} setUsers={setUsers} />
+    </main>
+  );
 }
 
 export default TweetPage;

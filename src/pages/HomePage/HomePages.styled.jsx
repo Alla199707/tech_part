@@ -6,9 +6,10 @@ export const Header = styled.header`
 `;
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
 `;
 
 export const Title = styled.h1`
