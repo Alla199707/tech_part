@@ -1,7 +1,7 @@
 // import Loader from 'components/Loader/Loader';
 import { UserItem } from 'components/UserItem/UserItem';
 import { useEffect, useState } from 'react';
-import { List, LoadMoreButton } from './Users.styled';
+import { List, LoadMoreButton, Title } from './Users.styled';
 
 export const Users = ({ users, setUsers }) => {
   const [sliceUser, setSliceUser] = useState(users.slice(1, 3));
@@ -23,7 +23,7 @@ export const Users = ({ users, setUsers }) => {
       {Page < 30 ? (
         <LoadMoreButton onClick={onClick}>Load more</LoadMoreButton>
       ) : (
-        <h2>That's all</h2>
+        <Title>That's all</Title>
       )}
     </>
   );

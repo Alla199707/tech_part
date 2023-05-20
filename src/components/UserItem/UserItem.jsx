@@ -1,6 +1,6 @@
-import React from 'react';
+// import React, { useCallback } from 'react';
 import logo from '../../image/logo.svg';
-import card from '../../image/card.svg';
+import background from '../../image/card.svg';
 import {
   Wrapper,
   Logo,
@@ -11,6 +11,7 @@ import {
   Followers,
   Button,
 } from './UserItem.styled';
+// import { updateTweets } from 'ApiUsers/ApiUsers';
 
 export const UserItem = ({ user, setUsers }) => {
   const users = JSON.parse(localStorage.getItem('users'));
@@ -47,7 +48,7 @@ export const UserItem = ({ user, setUsers }) => {
   return (
     <Wrapper key={id}>
       <Logo src={logo} alt="GO-IT-logo" width="70px" height="20px" />
-      <img src={card} alt="GO-IT-card" />
+      <img src={background} alt="GO-IT-background" />
       <Line />
       <Circle />
       <Avatar
@@ -77,9 +78,13 @@ export const UserItem = ({ user, setUsers }) => {
           {follow ? <span>Following</span> : <span>Follow</span>}
         </Button>
       )}
-      {/* <Button type="button" value={follow} onClick={() => onClick(id, follow)}>
-        {follow ? 'Follow' : 'Following'}
-      </Button> */}
+      {/* <ButtonNew
+        type="button"
+        value={follow}
+        onClick={() => onClick(id, follow)}
+      >
+        {follow ? 'Following' : 'Follow'}
+      </ButtonNew> */}
     </Wrapper>
   );
 };

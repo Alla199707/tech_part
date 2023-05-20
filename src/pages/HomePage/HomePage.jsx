@@ -3,7 +3,7 @@ import { Container, Title } from './HomePages.styled';
 function HomePage() {
   return (
     <Container>
-      <Title>Welcome back!</Title>
+      <Title>Welcome!</Title>
     </Container>
   );
 }

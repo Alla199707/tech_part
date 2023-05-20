@@ -30,3 +30,10 @@ export const LoadMoreButton = styled.button`
     rgb(75, 42, 153) 78.99%
   );
 `;
+export const Title = styled.h2`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+`;
