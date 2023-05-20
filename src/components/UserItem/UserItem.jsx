@@ -16,7 +16,7 @@ import {
 export const UserItem = ({ user, setUsers }) => {
   const users = JSON.parse(localStorage.getItem('users'));
   const { tweets, followers, avatar, id, follow } = user;
-  console.log(user);
+  // console.log(user);
 
   const setFollowing = id => {
     const usersFollow = users.map(user =>
