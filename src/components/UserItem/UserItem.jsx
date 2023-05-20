@@ -15,7 +15,8 @@ import {
 
 export const UserItem = ({ user, setUsers }) => {
   const users = JSON.parse(localStorage.getItem('users'));
-  const { twets, followers, avatar, id, follow } = user;
+  const { tweets, followers, avatar, id, follow } = user;
+  console.log(user);
 
   const setFollowing = id => {
     const usersFollow = users.map(user =>
@@ -57,7 +58,7 @@ export const UserItem = ({ user, setUsers }) => {
         width="100px"
         height="100px"
       />
-      <Tweets>{twets} Tweets</Tweets>
+      <Tweets>{tweets} Tweets</Tweets>
       <Followers>{followers.toLocaleString('en-US')} Followers</Followers>
       {follow ? (
         <Button
