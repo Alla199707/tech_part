@@ -27,7 +27,7 @@ function TweetPage() {
         }
       })
       .catch(error => console.log(error));
-  }, []);
+  });
   return <Users users={usersStorage ?? users} setUsers={setUsers} />;
 }
 

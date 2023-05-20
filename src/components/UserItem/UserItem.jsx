@@ -77,6 +77,9 @@ export const UserItem = ({ user, setUsers }) => {
           {follow ? <span>Following</span> : <span>Follow</span>}
         </Button>
       )}
+      {/* <Button type="button" value={follow} onClick={() => onClick(id, follow)}>
+        {follow ? 'Follow' : 'Following'}
+      </Button> */}
     </Wrapper>
   );
 };
