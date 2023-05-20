@@ -1,8 +1,8 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-// import { Header, Link } from './Layout.styled';
-// import { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import { Header, Link } from './Layuot.styled';
+import Loader from 'components/Loader/Loader';
 
 function Layout() {
   return (
@@ -13,10 +13,10 @@ function Layout() {
           <Link to="/tweets">Tweets</Link>
         </nav>
       </Header>
-      <Suspense fallback={<div>Loading.....</div>}>
+      <Suspense fallback={Loader}>
         <Outlet />
       </Suspense>
-      {/* <Toaster /> */}
+      <Toaster />
     </>
   );
 }

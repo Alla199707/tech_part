@@ -1,4 +1,4 @@
-import Loader from 'components/Loader/Loader';
+// import Loader from 'components/Loader/Loader';
 import { UserItem } from 'components/UserItem/UserItem';
 import { useEffect, useState } from 'react';
 import { List, LoadMoreButton } from './Users.styled';
